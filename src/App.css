@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", system-ui;
+}
+body{
+  background-color: black;
+}
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+  border-radius: 16px;
+  padding: 45px;
+  background-color: white;
+  flex-direction: column;
+
+}
+
+h2{
+  margin: 21px 0px;
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+}
+.container span{
+  margin: 21px 0px;
+}
+.box{
+  padding: 32px;
+  text-align: center;
+  align-items: center;
+  background-color: greenyellow;
+  margin: 21px 0px;
+}
+
+input {
+  padding: 18px 12px;
+  width: 100%;
+  margin: 21px 0px;
+}
+
+.btn {
+  padding: 22px 74px;
+  margin-top: 21px;
+  margin-right: 8px;
+  font-size: 17px;
+}
+.btn:nth-child(1){
+  cursor: cell;
+  background-color: black;
+  color: white;
+}
+
+.btn:nth-child(2){
+  cursor: alias;
+  background-color: white;
+  color: black;
+}
+
+
+@media (max-width:420px){
+  body{
+    height: 100vh;
+    width: 100vw;
+   
+  }
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+  padding: 7px 12px;
+  width: 100%;
+  margin: 9px 0px;
+}
+h2 {
+  margin: 14px 0px;
+  font-size: 22px;
+  text-align: center;
+  align-items: center;
+}
+.box {
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  background-color: greenyellow;
+  margin: 21px 0px;
+}
+.btn {
+  padding: 14px 39px;
+  margin-top: 21px;
+  margin-right: 8px;
+  font-size: 13px;
+}
+}
