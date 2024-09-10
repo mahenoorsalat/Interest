@@ -8,14 +8,20 @@ function App() {
   const [rate , setRate] = useState('');
   const [time , setTime] = useState('');
 
- const calc = ()=>{
-  if (isNaN(principle) || isNaN(rate) || isNaN(time) || principle <= 0 || rate <= 0 || time <= 0) {
-    alert("Enter Valid Values!");
-  } else {
-    const Int = (principle * rate * time) / 100;
-    setInterest(Int);
+  const calc = () => {
+    
+    const principleNum = parseFloat(principle);
+    const rateNum = parseFloat(rate);
+    const timeNum = parseFloat(time);
+  
+    
+    if (isNaN(principleNum) || isNaN(rateNum) || isNaN(timeNum) || principleNum <= 0 || rateNum <= 0 || timeNum <= 0) {
+      alert("Enter Valid Values!");
+    } else {
+      const Int = (principleNum * rateNum * timeNum) / 100;
+      setInterest(Int);
+    }
   }
- }
 
  const reload = () =>{
   window.location.reload();
